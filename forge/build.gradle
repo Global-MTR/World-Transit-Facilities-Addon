@@ -1,0 +1,16 @@
+architectury {
+    platformSetupLoomIde()
+    forge()
+}
+
+loom {
+    forge {
+        mixinConfig("wtsf.mixins.json")
+    }
+}
+
+dependencies {
+    forge "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
+
+    implementation project(":common")
+}
