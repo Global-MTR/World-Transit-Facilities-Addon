@@ -1,0 +1,13 @@
+architectury {
+    common("fabric")
+}
+
+repositories {
+    maven { url = "https://www.jitpack.io" }
+}
+
+dependencies {
+    modImplementation "net.fabricmc:fabric-loader:${fabric_loader_version}"
+
+    modImplementation "mtr:mtr-fabric:4.0.5"
+}
